@@ -10,6 +10,13 @@ rar/
 │   ├── hsv_detector.py  ← HSV rust detection engine
 │   ├── requirements.txt
 │   └── .env.example
+|   └── .env{
+            # backend/.env (safe version for GitHub)
+            ANTHROPIC_API_KEY=REPLACE_WITH_YOUR_KEY
+            MAX_UPLOAD_SIZE_MB=20
+            ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000	
+|               #this helps makes sure our program work and can compare with other llm models 
+|           }
 └── frontend/
     ├── src/
     │   ├── App.jsx
